@@ -1,0 +1,33 @@
+.form {
+    width: 95%;
+
+    @include medium {
+        width: 60%;
+    }
+    
+    @include large {
+        width: 40%;
+    }
+
+    &__label {
+        font-size: $font-base * 2.4;
+    }
+
+    &__input {
+        color: $color-white;
+        display: block;
+        width: 100%;
+        font-size: $font-base * 2.2;
+        padding: $grid-base * 1.4;
+        background-color: rgba(0, 0, 0, .4);
+        margin-bottom: $grid-base * 1.5;
+        border: 1px solid $color-white;
+        border-radius: $grid-base * .4;
+        outline: 0;
+
+        &:focus {
+            background-color: rgba(255, 255, 255, .2);
+            color: $color-green;
+        }
+    }
+}

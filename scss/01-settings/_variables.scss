@@ -1,0 +1,26 @@
+// kolory
+$color1: #eff0f3;
+$color2: #74030e;
+$color3: #132601;
+
+$color-white: $color1;
+$color-red: $color2;
+$color-green: $color3;
+
+// kolor dla wybranych sekcji
+$color-bg-section: #504533;
+
+// kolor tła stopki
+$color-bg-footer: #201b13;
+
+// fonty
+$font-base: 10px;
+
+// grid - siatka
+$grid-base: $font-base;
+// odstpy pomiędzy kolumnami
+$gutter: 1.5 * $grid-base;
+
+// brekpoints dla RWD
+$bp-md: 768px;
+$bp-lg: 1240px;

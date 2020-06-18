@@ -1,0 +1,14 @@
+p {
+    font-size: $font-base * 1.8;
+    line-height: $font-base * 2.8;
+    padding: $grid-base;
+    margin-top: $grid-base;
+    @include medium {
+        font-size: $font-base * 3.2;
+        line-height: $font-base * 3.8;
+    }
+    @include large {
+        font-size: $font-base * 4;
+        line-height: $font-base * 4.4;
+    }
+}

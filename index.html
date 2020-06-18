@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js"></script>
+    <title>Świat Leauge Of Legends</title>
+</head>
+<body onload="onLoadFunction()">
+    <header class="site-header" id="top">
+        <div class="blackout site-header__blackout"></div>
+        <nav class="site-header__nav">
+            <ul>
+                <li class="nav__item"><a class="nav__link" href="#start">O grze</a></li>
+                <li class="nav__item"><a class="nav__link" href="#pobierz">Pobierz</a></li>
+                <li class="nav__item"><a class="nav__link" href="#menu">Bohaterowie</a></li>
+                <li class="nav__item"><a class="nav__link" href="#rangi">Rangi</a></li>
+                <li class="nav__item"><a class="nav__link" href="#kontakt">Support</a></li>
+            </ul>
+        </nav>
+        <h1 class="heading--h1 site-header__h1"> <div class="border"> Witaj w świecie <br> League of Legends </div></h1>
+    </header>
+    <main>
+        <section class="start-section" id="pobierz">
+            <img style="float: right; margin-right: 40px; margin-top: 30px;" src="./assets/img/jinx.png">
+            <div style="text-align: center; font-size: 80px; padding-top: 11%;">
+                DOŁĄCZ DO NAS JUŻ DZIŚ
+            </div>
+            <a style="margin-left: 30%; margin-top: 4%;" class="nav-button2" href="https://signup.eune.leagueoflegends.com/pl/signup/index">GRAJ ZA DARMO</a>
+        </section>
+        <section id="start">
+            <div class="bg">
+                    <div class="col" style="text-align: left;">
+                        <h2 class="heading--h2" style="color: white; padding-left: 5px; padding-left: 60px; text-align: left;" >CZYM JEST LEAGUE OF LEGENDS?</h2> <br> <br>
+                        <p style="color: white; font-size: 23px; padding-left: 60px; padding-right: 60px; float: left;">League of Legends jest to gra strategiczna typu MOBA (Multiplayer Online Battle Arena).  Dwie drużyny składające się z 5 lub 3 różnych bohaterów stają naprzeciw siebie, zbierając złoto i doświadczenie, żeby potem wykorzystać swoją przewagę do zwycięstwa. Celem gry jest zniszczenie najważniejszego punktu w bazie przeciwnika - Nexusa.  Można to osiągnąć, przebijając się przez kolejne fortyfikacje wroga lub poprzez wymuszenie poddania się. League of legends wyróżniają na tle konkurencji nieprzerwane aktualizacje, dzięki którym gra nigdy nie traci na świeżości. Oprócz tego w grze jest do wyboru ponad 140 bohaterów, a ich pula wciąż się rozszerza - czy to poprzez dodawanie nowych, czy odświeżanie starych. Każdy nowy gracz odnajdzie dla siebie wymarzonego herosa, z którym najbardziej zidentyfikuje swój styl gry.</p>
+                        <img style="float: right; height: 250px; width: 250px; margin-right: 40px;" src="./assets/img/l.jpg" alt="">
+                    </div>
+            </div>
+        </section>
+        <section class="site-section site-section--bg-color" id="menu">
+            <h2 class="heading--h2" style="color: white;">WYBIERZ SWOJEGO BOHATERA</h2> <br>
+            <h3 class="heading--h3" style="color: white; padding-left: 30%; padding-right: 30%;">Mając do wyboru ponad 140 bohaterów, z pewnością znajdziesz kogoś dla siebie. Do perfekcji opanuj któregoś z nich — albo wszystkich.</h1>
+            <div class="container o-hidden">
+            <button class="nav-button" onclick="classScript.createHeroesCards(1, null)">WSZYSTKIE</button>
+            <button class="nav-button" onclick="classScript.createHeroesCards(0, 'warrior')">WOJOWNICY</button>
+            <button class="nav-button" onclick="classScript.createHeroesCards(0, 'assasin')">ZABÓJCY</button>
+            <button class="nav-button" onclick="classScript.createHeroesCards(0, 'mage')">MAGOWIE</button>
+            <button class="nav-button" onclick="classScript.createHeroesCards(0, 'marksman')">STRZELCY</button>
+            <button class="nav-button" onclick="classScript.createHeroesCards(0, 'support')">WSPIERAJĄCY</button>
+            <button class="nav-button" onclick="classScript.createHeroesCards(0, 'tank')">OBROŃCY</button>
+        </div>
+        <div class="container">
+            <div id="parentRow"class="row">
+            </div>
+            </div>
+        </section>
+        <section class="site-section" id="rangi">
+        <div class="bg2">
+            <hr style="width: 50%;">
+            <h2 class="heading--h2" style="padding-bottom: 20px;">RANGI</h2>
+            <!-- <hr style="width: 70%;"> -->
+            <div style="display: flex;">
+            <p style="padding-right: 80px; padding-left: 110px;">IRON</p>
+            <p style="padding-right: 70px; padding-left: 60px;">BRONZE</p>
+            <P style="padding-right: 100px; padding-left: 50px;">SILVER</P>
+            </div>
+            <div class="prawy">
+                System Rankingowy w League of Legends składa się z 9 lig, a te dzielią się na 4 dywizje (IV - najsłabsza, I - najsilniejsza). Rodzaj ligi, jak i dywizje reprezentują grupy graczy o podobnym poziomie umiejętności. Za wygrane mecze gracze zyskują punkty rankingowe, a za przegrane tracą je. Jeśli zawodnik w danej dywizji zdobędzie 100 punktów to zostanie dopuszczony do meczów, które mogą wypromować go do wyższej dywizji. Aby uzyskać promocję pomiędzy dywizjami trzeba będzie wygrać 2 z 3 kolejnych potyczek. W przypadku gdy gracz walczy o uzyskanie promocji do wyższej ligi, to będzie musiał wygrać 3 z 5 rozgrywek. Dla ułatwienia gracze którzy przegrali swoją promocję do wyższej dywizji, przy następnej zaczną z jedną wygraną. Reguła ta działa tylko i wyłącznie poniżej ligi Złotej I.
+            </div>
+            <div class="rangi">
+                <img style="padding-left: 25px;" src="./assets/img/iron.png">
+                <img src="./assets/img/bronze.png">
+                <img src="./assets/img/silver.png"> 
+            </div>
+            <div class="nav.baner">
+                <img style="padding-left: 48px; width: 280px; padding-bottom: 80px;" src="./assets/img/irondol.png">
+                <img class="baner" src="./assets/img/bronzedol.png">
+                <img class="baner" src="./assets/img/silverdol.png">
+            </div>
+            <div style="display: flex;">
+                <p style="padding-right: 80px; padding-left: 110px;">GOLD</p>
+                <p style="padding-right: 40px; padding-left: 50px;">PLATYNA</p>
+                <P style="padding-right: 100px; padding-left: 50px;">DIAMENT</P>
+            </div>
+            <div class="rangi">
+                <img style="padding-left: 25px;" src="./assets/img/gold.png"> 
+                <img src="./assets/img/plat.png"> 
+                <img src="./assets/img/diax.png"> 
+            </div>
+            <div class="nav.baner">
+                <img style="padding-left: 48px; width: 280px; padding-bottom: 80px;" src="./assets/img/golddol.png">
+                <img class="baner" src="./assets/img/platdol.png">
+                <img class="baner" src="./assets/img/diaxdol.png">
+            </div>
+            <hr style="background-color: white; width: 50%; margin-bottom: 70px;">
+            <div style="display: flex;">
+                <p style="padding-right: 10px; padding-left: 80px;">MISTRZ</p>
+                <p style="padding-right: 20px; padding-left: 50px;">ARCYMISTRZ</p>
+                <P style="padding-right: 100px; padding-left: 10px;">PRETENDENT</P>
+            </div>
+            <div class="prawy2">
+                Liga Mistrza, Arcymistrza i Pretendenta rządzi się własnymi prawami. Nie ma tam dywizji, są tylko punkty rankingowe. Im więcej punktów, tym wyższa pozycja w tabeli. Gracze nie awansują poprzez system promocji - w każdej z dywizji ustalona jest maksymalna pula przywoływaczy, a dostanie się do niej wymaga osiągnięcia pewnego progu punktów.
+            </div>
+            <div class="rangi">
+                <img style="padding-left: 25px;" src="./assets/img/grand.png"> 
+                <img src="./assets/img/grandm.png"> 
+                <img src="./assets/img/chall.png"> 
+            </div>
+            <div class="nav.baner">
+                <img style="padding-left: 48px; width: 280px; padding-bottom: 80px;" src="./assets/img/masterdol.png">
+                <img class="baner" src="./assets/img/granddol.png">
+                <img class="baner" src="./assets/img/challdol.png">
+            </div>
+        </div>
+        </section>
+        <section class="site-section site-contact" id="kontakt">
+            <div class="blackout site-contact__blackout"></div>
+            <h2 class="heading--h2 site-contact__h2">SUPPORT</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form class="form site-contact__form">
+                            <label class="form__label" for="mail">Podaj swój nickname:</label><br>
+                            <input class="form__input" name="mail" id="mail"><br>
+                            <label class="form__label" for="subject">Podaj temat wiadomości:</label><br>
+                            <input class="form__input" name="subject" id="subject"><br>
+                            <label class="form__label" for="message">Podaj treść wiadomości</label><br>
+                            <textarea class="form__input site-contact__textarea" name="message" id="message" cols="15" rows="5"></textarea><br>
+                            <input class="btn btn--outline" type="submit" value="Wyślij">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col--md33"><p><a href="https://watch.lolesports.com/pl" style="color: white;">E-Sport</a></p></div>
+                <div class="col col--md33"><p><a href="https://support.riotgames.com/hc/pl" style="color: white;">Wsparcie</a></p></div>
+                <div class="col col--md33"><p><a href="http://leagueoflegends.eu-surveypl2.sgizmo.com/s3/" style="color: white;">Ulepszaj z Nami</a></p></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <a> &copy;2020 Pajka. Wszelkie prawa zastrzeżone. </a>
+    </footer>
+    <div class="site-body__to-top">
+        <a class="to-top__link" href="#top">
+            <i class="material-icons">expand_less</i>
+        </a>
+    </div>
+</body>
+</html>
